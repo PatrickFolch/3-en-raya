@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+  background-color: darkcyan;
+}
+
+.cuadricula{
+  display: grid;
+  grid-template-columns:repeat(3,3fr);
+  grid-row-gap:0px;
+  margin: 80px;
+  padding:0px;
+}
+.cuadradoA{
+  border-style:solid;
+  border-color: black;
+  border-bottom: 0px; 
+  border-right: 0px;
+  padding:47px;
+  /* width:47px; */
+  background-color: white;
+}
+
+.cuadradoB{
+  border-style: solid;
+  border-color: black;
+  border-bottom: 0px; 
+  padding:47px;
+  /* width:47px; */
+  background-color: white;
+}
+
+.cuadradoC{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  border-left: 0px;
+  border-bottom: 0px;
+  padding:47px;
+  /* width:47px; */
+}
+
+.cuadradoD{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  border-right: 0px;
+  padding:47px;
+  /* width:47px; */
+}
+
+.cuadradoE{
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  padding:47px;
+  /* width:47px; */
+}
+
+.cuadradoF{
+  border-style: solid;
+  border-color: black;
+  border-left:0px;
+  background-color: white;
+  padding:47px;
+  /* width:47px; */
+}

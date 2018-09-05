@@ -39,56 +39,77 @@ body{
   padding:0px;
 }
 .cuadradoA{
+  background-color: white;
   border-style:solid;
   border-color: black;
   border-bottom: 0px; 
   border-right: 0px;
-  padding:47px;
-  /* width:47px; */
-  background-color: white;
-}
+  padding: 15px;
+  min-height: 60px;
+
+  }
 
 .cuadradoB{
+  background-color: white;
   border-style: solid;
   border-color: black;
   border-bottom: 0px; 
-  padding:47px;
-  /* width:47px; */
-  background-color: white;
+  padding: 15px;
+  min-height: 60px;
+
 }
 
 .cuadradoC{
+  background-color: white;
   border-style: solid;
   border-color: black;
-  background-color: white;
   border-left: 0px;
   border-bottom: 0px;
-  padding:47px;
-  /* width:47px; */
+  padding: 15px;
+  min-height: 60px;
+
+  
 }
 
 .cuadradoD{
+  background-color: white;
   border-style: solid;
   border-color: black;
-  background-color: white;
   border-right: 0px;
-  padding:47px;
-  /* width:47px; */
+  padding: 15px;
+  min-height: 60px;
+
+  
 }
 
 .cuadradoE{
+  background-color: white;
   border-style: solid;
   border-color: black;
-  background-color: white;
-  padding:47px;
-  /* width:47px; */
+  padding: 15px;
+  min-height: 60px;
+
+  
 }
 
 .cuadradoF{
+  background-color: white;
   border-style: solid;
   border-color: black;
   border-left:0px;
-  background-color: white;
-  padding:47px;
-  /* width:47px; */
+  padding: 15px;
+  min-height: 60px;
+
+  
+}
+
+/* img{
+  width: 35px;
+  height: 20px;
+} */
+
+.fichas{
+  color:orangered;
+  font-weight: bold;
+  font-size: 40px;
 }

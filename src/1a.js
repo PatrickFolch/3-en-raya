@@ -1,73 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
 
-class A extends Ract.Component {
-  constructor(props){
-    super(props)
-    this.handleClick = 
-    this.handleClick.bind(this); 
-    this.handleLoginClick = 
-    this.handleLoginClick.bind(this);
-    this.handleLogoutClick = 
-    this.handleLogoutClick.bind(this);
-    this.state = {isLoggedIn: 0};
-    }
-  handleClick() {
-    this.setState({isLoggedIn: 1});
-  }
-  handleLoginClick() {
-    this.setState({isLoggedIn: 2});
-  }
-
-  handleLogoutClick() {
-    this.setState({isLoggedIn: 1});
-  }
-  
-  render() {
-  const isLoggedIn = this.state.isLoggedIn;
-  let button;
-  
-if(isLoggedIn==0){
-      button = <PatataButton onClick=
-      {this.handleClick} />
-    }
-  if(isLoggedIn==1) {
-    button = <LoginButton onClick=
-    {this.handleLoginClick} />;
-  } 
-  if(isLoggedIn==2){
-    button = <LogoutButton onClick=
-    {this.handleLogoutClick} />;
-  }
-  
-  return (
-  <div className="cuadricula">
-    <div  id="1a" className="cuadradoA">
-       <div className="fichas">
-          <div>
-            <Greeting isLoggedIn={isLoggedIn} />
-            {button}
-          </div>
-       </div>
-    </div>
-  </div>
-   );
-  }
-}
-
-function NoGreeting(props) {
+export function NoGreeting(props) {
   return '';
 }
 
-function UserGreeting(props) {
-  return <p>O</p>;
+export function UserGreeting(props) {
+  return <p className="O">O</p>;
 }
 
-function GuestGreeting(props) {
-  return <p>X</p>;
+export function GuestGreeting(props) {
+  return <p className="X">X</p>;
 }
 
-function Greeting (props) {
+export function Greeting (props) {
   const isLoggedIn = props.isLoggedIn;
   if(isLoggedIn == 0){
       return <NoGreeting />
@@ -80,15 +25,15 @@ function Greeting (props) {
   }
 }
 
-function PatataButton(props) {
+export function PatataButton(props) {
   return (
     <button onClick={props.onClick}>
-      O
+      start
     </button>
   );
 }
 
-function LoginButton(props) {
+export function LoginButton(props) {
   return (
     <button onClick={props.onClick}>
     X
@@ -96,15 +41,10 @@ function LoginButton(props) {
   );
 }
 
-function LogoutButton(props) {
+export function LogoutButton(props) {
   return (
     <button onClick={props.onClick}>
         O
       </button>
   );
 }
-
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('root')
-);
